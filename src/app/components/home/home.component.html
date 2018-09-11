@@ -1,6 +1,9 @@
 <div class="page-container">
-<p>
-  home works!
-</p>
+  <h1>Example Chart:</h1>
+  <div class="chart-container">
+    <canvas baseChart [chartType]="'line'" [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"
+      [legend]="true" (chartClick)="onChartClick($event)">
+    </canvas>
+  </div>
 
 </div>
